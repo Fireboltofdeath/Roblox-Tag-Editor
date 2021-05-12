@@ -38,7 +38,7 @@ local function Group(props)
 					BackgroundTransparency = 1,
 					-- FIXME: This needs a non-hardcoded icon color.
 					-- The studio theme API doesn't have a class for this :(
-					ImageColor3 = themeType == Enum.UITheme.Light and Color3.fromRGB(25, 25, 25) or Color3.fromRGB(242, 242, 242),
+					ImageColor3 = themeType.Name == "Light" and Color3.fromRGB(25, 25, 25) or Color3.fromRGB(242, 242, 242),
 				})
 			})
 		end)
