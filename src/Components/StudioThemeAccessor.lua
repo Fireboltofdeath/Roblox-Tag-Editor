@@ -8,13 +8,13 @@ function StudioThemeAccessor:init()
 
 	self.state = {
 		theme = studioSettings.Theme,
-		themeEnum = studioSettings["UI Theme"]
+		themeEnum = studioSettings["Theme"]
 	}
 
 	self._themeConnection = studioSettings.ThemeChanged:Connect(function()
 		self:setState({
 			theme = studioSettings.Theme,
-			themeEnum = studioSettings["UI Theme"],
+			themeEnum = studioSettings["Theme"],
 		})
 	end)
 end
